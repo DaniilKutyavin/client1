@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url('../fonts/ofont.ru_Gilroy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 40px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    border-bottom: 1px solid white;
+}
+
+.navbar-scrolled {
+    background-color: #1A1A1A;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-scrolled .navbar-logo img {
+    height: 35px;
+}
+
+.navbar-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.navbar-logo {
+    justify-self: start;
+}
+
+.navbar-logo img {
+    margin: 13px;
+    transition: all 0.3s ease;
+}
+
+.navbar-links {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.navbar-links a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    z-index: 6;
+}
+
+.dropdown-menu {
+    position: absolute; /* Position the dropdown absolutely */
+    top: 50%; /* Adjust this to center vertically */
+    left: -15px; /* Align to the left of the parent */
+    transform: translateY(-10%); /* Move it above the link */
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    z-index: 5;
+    width: 210px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    padding-top: 35px;
+    padding-left: 13px;
+}
+
+.navbar-links .active-link {
+    background: linear-gradient(90deg, #ABF538, #FED919);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-user {
+    justify-self: end;
+}
+
+.navbar-user img {
+    height: 45px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.navbar-links a.active + .dropdown-menu,
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'MyriadPro-Regular';
+}
+
+.dropdown-menu a:hover {
+    background-color: transparent; /* Remove background color on hover */
+    color: rgba(255, 255, 255, 1); /* Change text color on hover */
+}
+
+.accordion-arrow {
+    margin-left: 5px;
+    width: 15px;
+    transition: transform 0.3s ease;
+}
+
+.accordion-arrow.open {
+    transform: rotate(180deg);
+}
+
+.catalog-wrapper:hover .dropdown-menu,
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+}
+.catalog-wrapper {
+    position: relative; /* Ensure the dropdown menu is positioned relative to this wrapper */
+}
+
+.big {
+    transition: transform 0.3s ease; /* Плавный переход */
+}
+
+/* Эффект увеличения при наведении */
+.big:hover {
+    transform: scale(1.1); /* Масштабируем элемент на 10% */
+}
+

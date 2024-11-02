@@ -1,0 +1,407 @@
+/* Font-face for main and secondary fonts */
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url('../fonts/ofont.ru_Gilroy.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/ofont.ru_Myriad Pro.ttf') format('woff'); /* Update path if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'a_PlakatCmpl';
+    src: url('../fonts/ofont.ru_a_PlakatCmpl.ttf') format('woff'); /* Update path if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #1A1A1A;
+    font-family: 'MyriadPro-Regular', sans-serif;
+    color: white;
+}
+
+.wrapperr {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start */
+    min-height: 100vh; /* Full height of the viewport */
+    padding: 0 20px; /* Optional padding */
+    
+   
+}
+
+.catalog-containerr {
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    width: 100%; /* Change this to 100% */
+}
+
+
+
+.left-section {
+    width: 450px;
+    margin-right: 20px;
+}
+
+.search-bar {
+    position: relative;
+    width: 100%; /* Настройте по нужной ширине */
+    max-width: 400px; /* Ограничение по ширине, если требуется */
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Отступ справа для иконки */
+    border: none;
+    border-bottom: 2px solid #606060; /* Нижняя белая черта */
+    background-color: transparent; /* Прозрачный фон */
+    color: white;
+    font-size: 16px;
+    outline: none; /* Убираем стандартное выделение */
+}
+
+.search-input::placeholder {
+    color:#606060; /* Цвет текста плейсхолдера */
+}
+
+.search-icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 20px;
+    pointer-events: none; /* Чтобы иконка не мешала клику в поле ввода */
+}
+.filter-block {
+    background-color: #303030;
+    padding: 20px;
+    border-radius: 38px 0 0 38px;
+    width: 100%;
+    height: 100%;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h2 {
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-arrow {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.filter-arrow.open {
+    transform: rotate(180deg);
+}
+
+.filter-content {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.filter-content label {
+    display: block;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+.product-title {
+    font-size: 28px;
+    font-family: 'Gilroy-ExtraBold';
+    font-weight: bold;
+    background:white;
+    -webkit-background-clip: text;
+}
+.right-section {
+    flex: 1;
+    margin-left: 30px;
+    margin-right: -20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 карточки на ряд */
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #1A1A1A;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 26px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    text-align: left;
+    position: relative; /* Add position relative to control absolute positioning inside */
+    width: 95%;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+    width: 92%; /* Занимает всю ширину контейнера */
+  
+}
+
+.product-card:hover {
+    background-color:#121212;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.product-card a {
+    text-decoration: none; /* Убирает подчеркивание */
+    color: inherit; /* Устанавливает цвет текста, унаследованный от родителя */
+  }
+
+.product-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.no-style-link {
+    text-decoration: none; /* Убирает подчеркивание */
+    color: inherit; /* Устанавливает цвет ссылки таким же, как у родительского элемента */
+}
+
+
+.product-description {
+    margin-top: 10px;
+    color: white;
+    font-size: 17px;
+    font-family: 'MyriadPro-Regular';
+    
+}
+
+.product-card .product-volume { 
+    width: 80px;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: white;
+    font-family: 'Gilroy-ExtraBold';
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease, margin-right 0.3s ease;
+    position: relative; /* Ensure the price moves as expected */
+    font-family: 'Gilroy-ExtraBold';
+   
+}
+
+.cart-icon {
+    display: none;
+    position: absolute;
+    left: 20px;
+    width: 30px;
+    transition: opacity 0.3s ease;
+    padding-top: 5px;
+}
+
+.product-card:hover .product-price {
+    transform: translateX(calc(300%)); /* Move price to the right */
+    margin-right: 0; /* Remove margin */
+}
+
+.product-card:hover .cart-icon {
+    display: block;
+    opacity: 1;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.pagination-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.pagination-page {
+    background: none;
+    border: none;
+    font-size: 18px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.pagination-page.active {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 160px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    background-color: #1A1A1A;
+}
+
+.header h1 {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 60px;
+    margin: 0;
+}
+
+.header p {
+    font-family: 'MyriadPro-Regular';
+    margin-top: -5px;
+}
+
+.filter-cancel-button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #606060;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 20px auto 0;; /* Space above the button */
+
+}
+
+.filter-cancel-button:hover {
+    background-color: #555;
+}
+
+.largeText {
+    font-size: 18px; /* Задайте нужный размер шрифта */
+}
+
+.title-block {
+    display: flex;
+    flex-direction: column; /* Размещаем заголовок и текст вертикально */
+    
+}
+
+.info-block {
+    position: relative;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    background-color: #3F0A0A; /* Красный фон блока */
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    margin-right: 100px;
+    border:  solid 2px #AA0202;
+}
+
+.exclamation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #592222;
+    border:  solid 1px #AA0202;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px;
+    min-width: 30px;  /* Фиксируем минимальную ширину */
+    min-height: 30px; /* Фиксируем минимальную высоту */
+    font-family: 'a_PlakatCmpl', sans-serif;
+}
+
+.info-text p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.close-btn {
+    background-color: #592222;
+    position: absolute;
+    top: 5px; /* Отступ от верхнего края */
+    right: 5px; /* Отступ от правого края */
+    color: white;
+    font-size: 26px;
+    border:  solid 1px #AA0202;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.close-btn img {
+    width: 13px;
+    padding-bottom: 6px;
+}
+
+.close-btn:hover {
+    color: #ff9999; /* Цвет при наведении */
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.35em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  .custom-checkbox:checked+label::before {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cdefs%3e%3clinearGradient id='gradient' x1='0%' y1='0%' x2='100%' y2='100%'%3e%3cstop offset='0%' style='stop-color:%23ABF538; stop-opacity:1'/%3e%3cstop offset='100%' style='stop-color:%23FED919; stop-opacity:1'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath fill='url(%23gradient)' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+
+  }
+  .filter-content p {
+    margin-bottom: -10px;
+  }
+
+  .search-icon img {
+    width: 20px;
+  }

@@ -1,0 +1,142 @@
+.article-container {
+    max-width: 800px;
+    margin: 120px auto 0 auto; /* Отступ сверху в 100px */
+    padding: 20px;
+    background-color: #1A1A1A; /* Темный фон */
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Небольшая тень для объема */
+    font-family: 'MyriadPro-Regular'; /* Шрифт статьи */
+  }
+  
+  .article-title {
+    font-family: 'Gilroy-ExtraBold'; /* Шрифт заголовка */
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #FED919; /* Цвет заголовка */
+    text-align: center;
+  }
+  
+  .article-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+  
+  .article-text {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 8px;
+  }
+  
+  .section-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left:30px ;
+    margin-top: 20px;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+  }
+  .arroww-icon {
+    width: 15px;
+    height: 15px;
+    transition: transform 0.6s;
+    margin-left: 10px;
+  }
+  
+  .arroww-icon.open {
+    transform: rotate(180deg);
+  }
+  /* Order Table Styling */
+.order-table-container {
+  background-color: #1A1A1A;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.order-table {
+  width: 90%;
+  border-collapse: collapse;
+  color: white;
+  margin-left: 10px;
+}
+
+.order-table-header th {
+  padding: 10px;
+  text-align: left;
+  border: 0px;
+  border-bottom: 1px solid #ABF538;
+  
+}
+
+.order-table td {
+  padding: 10px;
+  border: 1px solid #ABF538;
+}
+
+
+.order-table button {
+  background-color: #ABF538;
+  color: #1A1A1A;
+  border: none;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Pagination Styling */
+
+
+/* Account Information Form */
+.update-form-container {
+  background-color: #1A1A1A;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  width: 350px;
+  margin-left: 20px;
+}
+
+.update-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.update-form input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  color: white;
+  background-color: #1A1A1A;
+}
+
+.update-form button {
+  background-color: #1A1A1A;
+  color: white;
+  width: 200px;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  margin-top: 15px;
+  font-size: 18px;
+  font-family: 'Gilroy-ExtraBold', sans-serif;
+}
+.orders-table-container{
+  width: 90%;
+  margin-left: 30px;
+}
+
+.contact-info-manager{
+  margin-left: 30px;
+  width: 90%;
+}

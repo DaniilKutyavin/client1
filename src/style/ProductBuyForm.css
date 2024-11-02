@@ -1,0 +1,563 @@
+.productBuyForm_container {
+    margin-top: 100px; /* Updated top margin for spacing */
+    padding: 20px;
+    background-color: #1A1A1A; /* Dark background */
+    color: white; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 600px; /* Maximum width for better readability */
+    margin-left: auto;
+    margin-right: auto; /* Center the form */
+}
+
+.productBuyForm_container h2 {
+    text-align: center;
+    color: #ABF538; /* Light color for headings */
+    padding-bottom: 10px;
+}
+
+.productBuyForm_container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.productBuyForm_group {
+    margin-bottom: 15px; /* Spacing between form fields */
+}
+
+.productBuyForm_container label {
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels */
+}
+
+.productBuyForm_container input {
+    padding: 10px;
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #333; /* Dark input background */
+    color: white; /* White text in input */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.productBuyForm_container input:focus {
+    background-color: #444; /* Darker background on focus */
+    outline: none; /* Remove outline */
+}
+
+.productBuyForm_submitButton {
+    padding: 8px; /* Reduced padding for a smaller button */
+    background-color: #ABF538; /* Button color */
+    color: black; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.productBuyForm_submitButton:hover {
+    background-color: #9BDC1A; /* Darker shade on hover */
+}
+
+.productBuyForm_errorMessage {
+    color: red; /* Red color for error messages */
+    text-align: center; /* Center error message */
+}
+
+.productBuyForm_productList {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.productBuyForm_productItem {
+    display: flex;
+    justify-content: space-between; /* Space between product name and delete button */
+    margin: 10px 0; /* Spacing between items */
+    padding: 10px;
+    background-color: #333; /* Background for product items */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.productBuyForm_deleteButton {
+    background-color: #ff4d4d; /* Red color for delete button */
+    padding: 5px;
+    border-radius: 5px; /* Rounded corners */
+    border: none;
+    color: white; /* White text for delete button */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.productBuyForm_deleteButton:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+}
+
+.productBuyForm_addInfoButton {
+    margin-top: 10px; /* Spacing for add info button */
+    padding: 8px;
+    background-color: #ABF538; /* Add info button color */
+    color: black; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.productBuyForm_addInfoButton:hover {
+    background-color: #9BDC1A; /* Darker shade on hover */
+}
+
+/* New class for product info fields to arrange them in a column */
+.productBuyForm_infoFields {
+    display: flex;
+    flex-direction: column; /* Arrange fields in a column */
+    margin-top: 10px; /* Margin above info fields */
+}
+
+.userForm_container {
+    margin-top: 100px; /* Top margin for spacing */
+    padding: 20px;
+    background-color: #1A1A1A; /* Dark background */
+    color: white; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 600px; /* Maximum width for better readability */
+    margin-left: auto;
+    margin-right: auto; /* Center the form */
+}
+
+.userForm_container h2 {
+    text-align: center;
+    color: #ABF538; /* Light color for headings */
+    padding-bottom: 10px;
+}
+
+.userForm_container input {
+    padding: 10px;
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #333; /* Dark input background */
+    color: white; /* White text in input */
+    transition: background-color 0.3s; /* Smooth transition */
+    margin-bottom: 15px; /* Spacing between inputs */
+}
+
+.userForm_container input:focus {
+    background-color: #444; /* Darker background on focus */
+    outline: none; /* Remove outline */
+}
+
+.userForm_container {
+    padding: 10px; /* Padding for buttons */
+    background-color: #ABF538; /* Button color */
+    color: black; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+    margin-right: 10px; /* Spacing between buttons */
+}
+
+.userForm_container {
+    background-color: #9BDC1A; /* Darker shade on hover */
+}
+
+.user-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.user-item {
+    display: flex; /* Flexbox for user items */
+    justify-content: space-between; /* Space between inputs and buttons */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Background for user items */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for user items */
+    margin-bottom: 10px; /* Spacing between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.user-item input {
+    flex: 1; /* Allow inputs to grow and fill available space */
+    margin-right: 10px; /* Spacing between inputs and buttons */
+    min-width: 100px; /* Minimum width for inputs */
+    max-width: 150px; /* Max width for inputs to prevent overflow */
+}
+
+.user-item{
+    margin-left: 5px; /* Spacing between buttons */
+}
+
+.userForm_container {
+    margin-top: 100px; /* Updated top margin for spacing */
+    padding: 20px;
+    background-color: #1A1A1A; /* Dark background */
+    color: white; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 600px; /* Maximum width for better readability */
+    margin-left: auto;
+    margin-right: auto; /* Center the form */
+}
+
+.userForm_container h2 {
+    text-align: center;
+    color: #ABF538; /* Light color for headings */
+    padding-bottom: 10px;
+}
+
+.userForm_container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.userForm_group {
+    margin-bottom: 15px; /* Spacing between form fields */
+}
+
+.userForm_container label {
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels */
+}
+
+.userForm_container input {
+    padding: 10px;
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #333; /* Dark input background */
+    color: white; /* White text in input */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.userForm_container input:focus {
+    background-color: #444; /* Darker background on focus */
+    outline: none; /* Remove outline */
+}
+
+.userForm_submitButton {
+    padding: 8px; /* Reduced padding for a smaller button */
+    background-color: #ABF538; /* Button color */
+    color: black; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.userForm_submitButton:hover {
+    background-color: #9BDC1A; /* Darker shade on hover */
+}
+
+.user-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.user-item {
+    display: flex; /* Flexbox for user items */
+    justify-content: space-between; /* Space between inputs and buttons */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Background for user items */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for user items */
+    margin-bottom: 10px; /* Spacing between items */
+}
+
+
+
+
+
+
+
+
+/* ProductBuyForm.css */
+.news-page {
+   
+    padding: 20px;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.news-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ABF538;
+}
+
+.news-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-input,
+.form-textarea,
+.form-file,
+.form-button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #FFFFFF;
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.form-textarea {
+    resize: none;
+}
+
+.form-button {
+    background-color: #ABF538;
+    color: #1A1A1A;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #FED919;
+}
+
+.news-list {
+    margin-top: 20px;
+}
+
+.news-item {
+    background-color: #2A2A2A;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.news-item-title {
+    font-size: 1.5em;
+    color: #ABF538;
+}
+
+.news-item-description {
+    font-size: 1em;
+    color: #FFFFFF;
+}
+
+.news-item-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+
+
+.delivery-page {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 20px;
+    background-color: #1A1A1A; /* Черный фон для страницы */
+    color: #FFFFFF; /* Белый текст */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Gilroy-ExtraBold', sans-serif; /* Шрифт заголовка */
+}
+
+.delivery-form {
+    display: flex;
+    flex-direction: column; /* Вертикальная ориентация полей */
+    gap: 15px; /* Промежутки между полями формы */
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #FFFFFF; /* Белая граница */
+    border-radius: 8px; /* Закругленные углы */
+    background-color: #333333; /* Темный фон полей */
+    color: #FFFFFF; /* Белый текст в полях */
+    font-family: 'MyriadPro-Regular', sans-serif; /* Шрифт для текстовых полей */
+    font-size: 1rem;
+    transition: border-color 0.3s; /* Плавное изменение границы */
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #ABF538; /* Цвет границы при фокусе */
+}
+
+
+
+
+
+
+.giftForm_container {
+    margin-top: 100px; /* Top margin for spacing */
+    padding: 20px;
+    background-color: #1A1A1A; /* Dark background */
+    color: white; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 600px; /* Maximum width for better readability */
+    margin-left: auto;
+    margin-right: auto; /* Center the form */
+}
+
+.giftForm_container h2 {
+    text-align: center;
+    color: #ABF538; /* Light color for headings */
+    padding-bottom: 10px;
+}
+
+.giftForm_container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.giftForm_group {
+    margin-bottom: 15px; /* Spacing between form fields */
+}
+
+.giftForm_container label {
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels */
+}
+
+.giftForm_container input {
+    padding: 10px;
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #333; /* Dark input background */
+    color: white; /* White text in input */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.giftForm_container input:focus {
+    background-color: #444; /* Darker background on focus */
+    outline: none; /* Remove outline */
+}
+
+.giftForm_submitButton {
+    padding: 10px; /* Padding for submit button */
+    background-color: #ABF538; /* Button color */
+    color: black; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.giftForm_submitButton:hover {
+    background-color: #9BDC1A; /* Darker shade on hover */
+}
+
+.giftForm_errorMessage {
+    color: red; /* Red color for error messages */
+    text-align: center; /* Center error message */
+}
+
+
+.footerForm_container {
+    margin-top: 100px; /* Top margin for spacing */
+    padding: 20px;
+    background-color: #1A1A1A; /* Dark background */
+    color: white; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 600px; /* Maximum width for better readability */
+    margin-left: auto;
+    margin-right: auto; /* Center the form */
+}
+
+.footerForm_container h3 {
+    text-align: center;
+    color: #ABF538; /* Light color for headings */
+    padding-bottom: 10px;
+}
+
+.footerForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerForm_group {
+    margin-bottom: 15px; /* Spacing between form fields */
+}
+
+.footerForm_container label {
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels */
+}
+
+.footerForm_container input {
+    padding: 10px;
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #333; /* Dark input background */
+    color: white; /* White text in input */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.footerForm_container input:focus {
+    background-color: #444; /* Darker background on focus */
+    outline: none; /* Remove outline */
+}
+
+.footerForm_submitButton,
+.footerForm_cancelButton {
+    padding: 10px; /* Padding for buttons */
+    background-color: #ABF538; /* Button color */
+    color: black; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.footerForm_submitButton:hover,
+.footerForm_cancelButton:hover {
+    background-color: #9BDC1A; /* Darker shade on hover */
+    color: black; /* Button text color remains the same */
+}
+
+.footerForm_cancelButton {
+    background-color: #ff4d4d; /* Red color for cancel button */
+}
+
+.footerForm_cancelButton:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+}
+
+
+
+.productBuyForm_container {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #1A1A1A;
+    color: white;
+    border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productBuyForm_container h2 {
+    text-align: center;
+    color: #ABF538;
+    padding-bottom: 10px;
+}
+
+.productBuyForm_group {
+    margin-bottom: 15px;
+}
+
+.productBuyForm_container input,
+.productBuyForm_container textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    transition: background-color
+}

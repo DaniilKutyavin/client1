@@ -1,0 +1,104 @@
+.login-form-overlay {
+    position: fixed; /* Фиксированное позиционирование для перекрытия всего экрана */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+    display: flex; /* Используем flexbox для центрирования */
+    align-items: center; /* Вертикальное центрирование */
+    justify-content: center; /* Горизонтальное центрирование */
+    z-index: 9999; /* Обеспечиваем передний план */
+}
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.2); /* Прозрачный фон */
+    backdrop-filter: blur(15px); /* Эффект размытия */
+    color: white; /* Белый текст */
+    border-radius: 40px; /* Округленные углы формы */
+    padding: 20px;
+    width: 650px; /* Ширина формы */
+    max-width: 90%; /* Максимальная ширина */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative; /* Позиционирование для close-btn */
+    margin: auto; /* Центрирование формы */
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column; /* Расположение полей по вертикали */
+    margin-bottom: 15px; /* Отступ между полями */
+}
+
+.form-field {
+    margin-bottom: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.email-password-row {
+    display: flex;
+    gap: 20px;
+  
+}
+
+.log {
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid white;
+    border-radius: 11px;
+    padding: 10px;
+    width: 100%;
+}
+
+.submit-buttonn {
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Gilroy-ExtraBold';
+}
+
+.login-form h1 {
+    margin-top: 10px;
+}
+
+.loginotst{
+    padding-bottom: 20px;
+}
+
+.register-text {
+    text-align: center; /* Центрирование текста */
+}
+
+.sub {
+    width: 20px;
+}
+.error-message {
+    color: rgb(240, 66, 66); /* Цвет текста ошибок красный */
+    font-size: 15px; /* Размер шрифта для ошибок, вы можете изменить его */
+    margin-top: 5px; /* Отступ сверху для расстояния между полем и сообщением об ошибке */
+}
+
+
+.close-btnn{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer
+}
+
+

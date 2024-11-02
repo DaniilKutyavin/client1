@@ -1,0 +1,431 @@
+.shop-container {
+    position: relative; /* Чтобы блоки могли быть позиционированы относительно этого контейнера */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; 
+    
+}
+
+.shop-slider {
+    width: 100%;
+    height: 100vh;
+
+}
+.shop-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom; /* Изображение будет позиционироваться по верхнему краю */
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Чтобы блоки не мешали взаимодействию с слайдером */
+}
+
+.overlay-block {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px); /* Размытие фона */
+    text-align: center;
+    max-width: 90%; /* Чтобы блоки не были слишком широкими */
+}
+
+.top-left {
+    top: 10%;
+    left: 10%;
+}
+
+.top-right {
+    top: 10%;
+    right: 10%;
+}
+
+.bottom-left {
+    bottom: 10%;
+    left: 10%;
+}
+
+.bottom-right {
+    bottom: 10%;
+    right: 10%;
+}
+
+.shop-content {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 50px;
+    transform: translateX(-45%);
+    
+}
+
+.swiper-pagination-bullet {
+    background-color: white;
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white;
+    opacity: 1;
+}
+
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url('../fonts/ofont.ru_Gilroy.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.page-content {
+    overflow-y: auto;
+    background-color: #1A1A1A;
+}
+
+
+
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/ofont.ru_Myriad Pro.ttf') format('woff'); /* Замените путь на правильный */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.blur-overlay-container {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 10;
+    margin-bottom: -15px;
+    
+}
+
+.blur-overlay-top {
+    display: flex;
+    justify-content: space-between; /* Для равномерного распределения */
+    gap: 5px; /* Отступ между блоками */
+    width: 100%; /* Полная ширина */
+    padding: 0 10px;
+}
+
+.blur-overlay-bottom {
+    display: flex;
+    justify-content: space-between; /* Для равномерного распределения */
+    gap: 5px; /* Отступ между блоками */
+    width: 100%; /* Полная ширина */
+    margin-top: 5px; /* Отступ между верхним и нижним рядами */
+    padding: 0 10px;
+}
+
+.blur-block {
+    background-color: rgba(126, 121, 121, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Каждый блок займет равное пространство */
+    cursor: pointer; /* Указатель на кликабельные элементы */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: inherit; /* Унаследовать цвет текста от родительского элемента */
+    display: flex; /* Убедитесь, что содержимое внутри блока отображается корректно */
+    flex-direction: column; /* Выстраиваем элементы в колонку */
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    align-items: flex-start; /* Выравнивание элементов по левому краю */
+    pointer-events: auto;
+    border: 1px solid grey;
+}
+.top-left {
+    border-top-left-radius: 25px; /* Закруглённый верхний левый угол */
+}
+
+.top-right {
+    border-top-right-radius: 25px; /* Закруглённый верхний правый угол */
+}
+
+.bottom-left {
+    border-bottom-right-radius: 25px; /* Закруглённый нижний левый угол */
+}
+
+.bottom-right {
+    border-bottom-left-radius: 25px; /* Закруглённый нижний правый угол */
+}
+
+.blur-block.long {
+    flex: 3; /* Длинный блок займет больше пространства */
+    
+}
+.text-left {
+    align-self: flex-start; /* Выравнивание текста по левому краю */
+}
+
+.blur-block.short {
+    flex: 1;
+    display: flex; 
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем содержимое по вертикали */
+}
+
+
+
+.block4-image {
+    max-width: 100%;
+    height: auto;
+}
+.blur-block h4 {
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-size: 80px; /* Размер заголовка */
+    margin: 0 0 10px; /* Отступ снизу */
+    
+}
+
+  
+.opis{
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+  }
+.blur-block p {
+    font-size: 20px; /* Размер описания */
+    line-height: 1.5; /* Интерлиньяж */
+}
+/* Описание */
+
+
+@media (max-width: 1300px) {
+    .blur-block h4 {
+        font-size: 60px; /* Размер для маленьких экранов */
+    }
+
+    .blur-block p {
+        font-size: 15px; /* Размер для маленьких экранов */
+    }
+}
+
+
+.reward-scale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #4f6423, #1A1A1A 25%); /* Градиент слева направо */
+    padding-top: 20px;
+    color: #fff;
+    position: relative;
+    border-top: 2px solid #fff;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ABF538, #FED919); /* Adjust the colors as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-bar {
+    background: linear-gradient(to right, #ABF538, #FED919); /* Example gradient */
+  }
+
+.gift-container {
+    display: flex;
+    margin-left: 20px;
+    flex-shrink: 0; /* Блок с текстом не будет сжиматься */
+    margin-bottom: 15px;
+}
+
+.gift-container img {
+    margin-right: 10px;
+    width: 32px; /* Уменьшение размера изображения слева */
+    height: auto; /* Сохраняем пропорции картинки */
+}
+
+.gift-text h4 {
+    font-family: 'MyriadPro-Regular'; /* Применение шрифта */
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap; /* Текст не будет переноситься */
+    font-size: 26px; /* Увеличение размера текста */
+}
+
+.gift-text p {
+    font-family: 'MyriadPro-Regular'; /* Применение шрифта */
+    margin: 0;
+    font-size: 18px; /* Увеличение размера текста */
+    white-space: nowrap; /* Текст не будет сжиматься и переноситься */
+}
+
+.scale-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.scale-line {
+    width: 100%;
+    border-top: 1px solid #fff; /* Белая линия сверху */
+    margin-bottom: 10px;
+}
+
+.scale-values {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.scale-values span {
+    font-family: 'Gilroy-ExtraBold'; /* Применение шрифта */
+    font-size: 22px; /* Увеличение размера цифр */
+    position: relative;
+    text-align: center;
+    width: 100px; /* Устанавливаем ширину для равномерного позиционирования */
+    margin-bottom: -25px;
+}
+
+.scale-bars {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar {
+    width: 4px; /* Толщина палочек */
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%); /* Центрируем палочки */
+    margin-bottom: -15px;
+}
+
+.bar-1 {
+    left: calc(15% + 50px); /* Настройка для 30 000 */
+}
+
+.bar-2 {
+    left: 50%; /* Настройка для 50 000 */
+}
+
+.bar-3 {
+    left: calc(95% - 45px); /* Настройка для 100 000 */
+}
+
+.cart-container {
+    margin-right: 2%;
+    margin-bottom: 10px;
+}
+
+.cart-container img {
+    width: 40px;
+    height: auto;
+   
+}
+
+.scale-values .value-1 {
+    margin-left: 15%; /* Сдвигаем 30 000 правее */
+}
+
+.scale-values .value-2 {
+    margin-left: -10%; /* Сдвигаем 50 000 левее */
+}
+
+
+.scale-values .value-3 {
+    margin-right: 5%; /* Сдвигаем 50 000 левее */
+}
+
+.reward-scale {
+    position: relative; /* Измените на relative, чтобы он не фиксировался изначально */
+    z-index: 10; /* Убедитесь, что он выше других элементов */
+  }
+
+.reward-scale.sticky {
+    position: fixed; /* Фиксированное положение, когда он становится липким */
+    bottom: 0; /* Привязать к нижней части экрана */
+    left: 0;
+    right: 0;
+    z-index: 10; /* Убедитесь, что он перекрывает другие элементы */
+  }
+
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(11,11,11); /* Фон для пустых мест */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Убедитесь, что видео поверх остальных элементов */
+  }
+  
+  .video-container img {
+    width: 60%; /* Уменьшаем видео до 80% ширины экрана */
+    height: auto; /* Уменьшаем видео до 80% высоты экрана */
+    object-fit: cover; /* Чтобы видео сохраняло свои пропорции */
+  }
+
+
+  .cart-iconn {
+    position: relative; /* Делаем этот элемент относительным для абсолютного позиционирования внутреннего счётчика */
+    display: inline-block; /* Позволяет установить размеры для иконки */
+  }
+  
+  .item-count {
+    position: absolute; /* Позволяет размещать счётчик в углу иконки */
+    top: 62%; /* Центрируем по вертикали */
+    left: 51%; /* Центрируем по горизонтали */
+    transform: translate(-50%, -50%); /* Сдвигаем влево и вверх на половину ширины и высоты */
+    background-color: rgba(0, 0, 0, 0); /* Цвет фона счётчика */
+    color: black; /* Цвет текста счётчика */
+    border-radius: 50%; /* Круглая форма */
+    width: 22px; /* Ширина круга */
+    height: 22px; /* Высота круга */
+    display: flex; /* Для центрирования текста */
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: center; /* Центрируем по горизонтали */
+    font-size: 15px; /* Размер шрифта */
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+  }
+
+  .horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    gap: 20px; /* Расстояние между блоками */
+  
+    overflow-x: auto;
+  }
+  
+  .scroll-item {
+    flex: 0 0 auto;
+    width: 300px; /* Ширина блока */
+    height: 400px; /* Высота блока */
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  

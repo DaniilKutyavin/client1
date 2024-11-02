@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/ofont.ru_Myriad Pro.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1A1A1A;
+    color: white;
+    font-family: 'MyriadPro-Regular', sans-serif;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 105px;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .logo {
+    width: 250px;
+    margin-bottom: 80px;
+  }
+  
+  .contact-info p {
+    margin: 2px 0;
+    font-size: 25px;
+  }
+  
+  .copyright {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .right {
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 120px;
+    font-size: 25px;
+  }
+  
+  .links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 15px;
+    margin-bottom: -40px;
+  }
+  
+  .social-icon {
+    height: 25px; /* Set a uniform height */
+    width: auto;
+    margin-left: 10px; /* Add spacing between icons */
+    vertical-align: middle; 
+  }
+  
+  .social-icon:hover {
+    opacity: 0.8;
+  }
+
+  .timefoot {
+    margin-bottom: -30px;
+    font-size: 20px;
+  }
+  
+  .footer a {
+    text-decoration: none; /* Убирает подчеркивание */
+    color: inherit; /* Устанавливает цвет текста ссылки таким же, как у родительского элемента */
+}

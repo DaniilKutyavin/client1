@@ -1,0 +1,96 @@
+
+
+
+.product-item {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%; /* Ensure the item takes full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.product-title-price {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.product-pricee {
+    font-size: 23px;
+    margin-top: 5px;
+    width: 110px;
+    background: linear-gradient(to right, #ABF538, #FED919);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    font-family: 'Gilroy-ExtraBold';
+    
+}
+
+.expand-arrow {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.expand-arrow.open {
+    transform: rotate(180deg);
+}
+
+
+.sell-button {
+    width: 200px;
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(to right, #ABF538, #FED919);
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    cursor: pointer;
+    font-family: 'Gilroy-ExtraBold';
+}
+
+.sell-button:hover {
+    background-color: #9BCC32;
+}
+
+.divider {
+    height: 1px;
+    background-color: rgb(116, 113, 113);
+    margin-top: 10px;
+}
+
+.info-blockk {
+    display: flex;
+    align-items: center; /* Выравнивает элементы по вертикали */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1a1a1a; /* Фон для блока */
+    border-radius: 10px;
+}
+
+.text-contentt {
+    color: white;
+    padding-right: 20px; /* Отступ между текстом и изображением */
+    
+}
+
+.image-contentt img {
+   width: 70px;
+}
+
+.titleoffer {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 48px;
+}

@@ -1,0 +1,354 @@
+/* Font-face for main and secondary fonts */
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url('../fonts/ofont.ru_Gilroy.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/ofont.ru_Myriad Pro.ttf') format('woff'); /* Update path if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Styles */
+.productPage {
+    position: relative;
+    background-color: #1A1A1A;
+    color: white;
+    padding-top: 260px;
+    font-family: 'MyriadPro-Regular';
+    min-height: 100vh;
+    overflow: hidden;
+}
+.backgroundText {
+    
+    color: #212020;
+    position: absolute;
+    top: -120px; /* Оставляем как есть для позиции по вертикали */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Смещаем на 50% ширины для точного центрирования */
+    z-index: 0; /* Оставляем текст на заднем плане */
+    font-family: 'Gilroy-ExtraBold';
+    pointer-events: none; /* Клики проходят сквозь элемент */
+    white-space: nowrap; /* Предотвращаем перенос текста на новую строку */
+  }
+  
+
+
+
+.productCard {
+    border-radius: 8px;
+    padding: 20px;
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative; /* Ensure this is positioned */
+    z-index: 1;
+}
+
+.productInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.textContent {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.textContent .description {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-family: 'Gilroy-ExtraBold';
+}
+
+.highlightedInfo {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ABF538;
+    font-family: 'Gilroy-ExtraBold';
+}
+
+.productVolume span {
+    background: linear-gradient(90deg, #ABF538, #FED919); /* Gradient background */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text color transparent */
+    font-size: 38px;
+    margin-right: 10px;
+    font-family: 'Gilroy-ExtraBold';
+    
+
+}
+
+
+.producer{
+    margin-top: 20px;
+}
+
+.producer,
+.pdfLink {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 5px;
+    font-family: 'MyriadPro-Regular';
+}
+.pdfLink {
+    position: relative;
+    padding-left: 25px; /* Отступ для размещения точки */
+  }
+  
+  .dot {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #ABF538, #FED919);
+    transform: translateY(-50%);
+  }
+.productImageAndPrice {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productImage {
+    width: 100%; /* Take full width of the container */
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.productImage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.priceSection {
+    display: flex; /* Enable flexbox layout */
+    align-items: center; /* Center items vertically */
+    background: linear-gradient(90deg, rgba(171, 245, 56, 0.4), rgba(253, 217, 25, 0.4)); /* Gradient background */
+    width: 110%;
+    margin-left: -20px;
+  }
+  
+  .priceButton {
+    flex: 0 0 75%; /* Set the price button to take 70% of the width */
+    background: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    color: white; /* Text color */
+    font-size: 18px; /* Adjust font size */
+    cursor: pointer; /* Pointer cursor */
+  }
+  .price {
+    margin-left: auto; /* Push price to the far right */
+    color: white; /* Text color */
+    font-size: 25px; /* Adjust font size */
+    font-family: 'Gilroy-ExtraBold';
+  }
+  
+  .separator {
+    flex: 0 0 2px; /* Set fixed width for the separator */
+    background-color: black; /* Color of the separator line */
+    height: 70px; /* Height of the separator line */
+    margin: 0 10px; /* Add horizontal margin for spacing */
+  }
+  
+  .addToCartButton {
+    flex: 0 0 25%; /* Set the add to cart button to take 30% of the width */
+    background: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Optional: Hover effects to maintain the button styles */
+ 
+  
+  /* Add this for visibility */
+ 
+.addToCartButton img {
+    width: 40px; /* Adjust icon size if necessary */
+    margin-right: 20%; /* Ensure no margin around the image */
+}
+
+/* Стили для информации о составе */
+.highlightedInfo {
+    font-size: 20px;
+    background: linear-gradient(90deg, rgba(171, 245, 56, 0.4), rgba(253, 217, 25, 0.4));/* Светлый фон для акцента */
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 15px;
+    font-family: 'MyriadPro-Regular';
+}
+
+.accordionSection {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #49423d;
+    padding-top: 20px;
+}
+
+.accordion {
+    border: none;
+    background: none;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.accordion summary {
+    list-style: none; /* Убираем маркеры (треугольники) */
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Gilroy-ExtraBold';
+    color: white;
+}
+
+.accordion p {
+    font-size: 16px;
+    font-family: 'MyriadPro-Regular';
+}
+
+.accordion-arrow {
+    width: 12px;
+    height: 12px;
+    transition: transform 0.2s ease;
+}
+
+.accordion[open] .accordion-arrow {
+    transform: rotate(180deg);
+}
+
+.accordion p {
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: 'MyriadPro-Regular';
+    color: #fff;
+}
+
+/* Header Styles */
+.header {
+    text-align: left;
+    padding-top: 160px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #49423d;
+    color: #fff;
+    background-color: #1A1A1A;
+}
+
+.header h1 {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 60px;
+    margin: 0;
+}
+
+.header p {
+    font-family: 'MyriadPro-Regular';
+}
+
+.sertif {
+    margin-top: 100px;
+}
+
+@media (max-width: 1200px) {
+    .backgroundText {
+        font-size: 11vw; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .backgroundText {
+        font-size: 6vw; /* Further adjust for very small screens */
+    }
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto; /* Выравнивание таблицы по центру */
+    width: 100%; /* Можно настроить ширину по необходимости */
+}
+
+table td, table th {
+    border: 1px solid white; /* Цвет линий таблицы белый */
+    padding: 10px;
+    text-align: center; /* Центрирование текста в ячейках */
+}
+
+
+.accordion {
+    background-color: #1A1A1A;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+
+  .storage-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 20px;
+  }
+
+  .textttt{
+    margin-left: 50px;
+  }
+  
+  .storage-item {
+    text-align: left;
+    flex-basis: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .storage-item:nth-child(3) {
+    flex-basis: 100%; /* Третий элемент занимает всю ширину */
+  }
+  
+  .storage-icon {
+    width: 50px; /* Задайте нужный размер */
+    height: 50px; /* Задайте нужный размер */
+    border-radius: 50%; /* Сделать круглый */
+    border: 3px solid white;/* Белый фон */
+    margin-bottom: 15px; /* Отступ снизу под иконкой */
+  }
+  
+  .storage-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-family: "Gilroy-ExtraBold";
+  }
+  
+  .storage-text p {
+    font-size: 1rem;
+    font-family: "MyriadPro-Regular";
+  }
+
+  .advantages-list {
+    list-style-type: disc; /* Используем точки для маркированного списка */
+    margin-left: 20px; /* Отступ слева для корректного отображения */
+  }
+  
+  .advantages-list li {
+    font-family: "MyriadPro-Regular"; /* Шрифт для текста */
+    margin-bottom: 10px; /* Отступ между пунктами списка */
+
+  }
+
+  .manimg{
+    height: 50px;
+  }

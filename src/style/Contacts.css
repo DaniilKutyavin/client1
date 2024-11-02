@@ -1,0 +1,231 @@
+*::selection {
+  background: #c5ff56;
+  color: black;
+}
+.contacts-container {
+    color: #fff;
+    background-color: #1A1A1A;
+    padding: 50px;
+  }
+  
+  .header {
+    text-align: left;
+    padding-top: 160px; /* Отступ сверху */
+    padding-left: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #49423d;
+    color: #fff;
+    background-color: #1A1A1A;
+  }
+  
+  .header h1 {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 60px;
+    margin: 0;
+  }
+  
+  .header p {
+    font-family: 'MyriadPro-Regular';
+  }
+  
+  .contact-block {
+    margin-bottom: 40px;
+  }
+  
+  .contact-block h2 {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет блокам плавно адаптироваться */
+    gap: 20px; /* Отступы между элементами */
+    font-family: 'MyriadPro-Regular';
+    font-size: 18px;
+  }
+  
+  .contact-details div {
+    flex: 1; /* Занимает равное пространство */
+    min-width: 200px; /* Минимальная ширина для предотвращения переполнения текста */
+  }
+  
+  .contact-details p {
+    margin: 0; /* Убираем отступы у параграфов */
+  }
+  
+  .contact-details a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  /* Стили для формы */
+  .partnership-form {
+    margin-top: 50px;
+    width: 700px;
+  }
+  
+  .partnership-form h2 {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 32px;
+  }
+  
+  .partnership-form form {
+    width: 500px; /* Ширина формы */
+    display: flex; 
+    flex-direction: column; /* Размещаем элементы вертикально */
+    gap: 10px; /* Отступы между элементами */
+}
+
+.form-container {
+    display: flex; /* Контейнер для полей и кнопки */
+    gap: 10px; /* Отступ между полями и кнопкой */
+}
+
+.form-fields {
+    display: flex; /* Оборачиваем поля ввода в флекс-контейнер */
+    flex-direction: column; /* Располагаем элементы в столбик */
+    flex: 1; /* Поля формы занимают всю доступную ширину */
+}
+
+.form-group {
+    margin-bottom: 10px; /* Отступ между полями */
+}
+
+.form-group label {
+    font-family: 'MyriadPro-Regular';
+    font-size: 18px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px; /* Отступы внутри полей */
+    font-size: 16px; /* Размер шрифта */
+    margin-top: 5px;
+    background-color: #333;
+    border: 1px solid white;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.submit-button {
+  background-color: #1A1A1A;
+  color: #ffffff;
+    padding: 15px; /* Отступы кнопки */
+    font-size: 20px; /* Размер шрифта кнопки */
+    font-family: 'Gilroy-ExtraBold';
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid white;
+    flex-grow: 0; /* Убираем растяжение кнопки */
+    height: 200px; /* Высота кнопки устанавливается автоматически */
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+.partnership-form p {
+    font-family: 'MyriadPro-Regular';
+    font-size: 18px;
+    margin-top: 10px; /* Отступ сверху для текста */
+}
+
+  
+  /* Адаптивные стили для мобильных устройств */
+  @media (max-width: 768px) {
+    .contact-details {
+      flex-direction: column; /* В колонку на мобильных */
+    }
+  
+    .partnership-form form {
+      flex-direction: column;
+    }
+  
+    .submit-button {
+      width: 100%;
+      height: auto; /* Кнопка будет по ширине */
+    }
+  }
+  
+  .employee-cards {
+    background-color: #1A1A1A;
+  }
+  
+  .employee-cards h2 {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .employee-card {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: 30px;
+  }
+  
+  .employee-card img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .employee-info {
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .employee-info h3 {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .employee-info p {
+    font-family: 'MyriadPro-Regular';
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  /* Apply specific border-radius to all corners except the bottom-left */
+  .employee-img  {
+    border-top-right-radius: 70px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 0;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .employee-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  .color {
+   font-size: 18px;
+  }

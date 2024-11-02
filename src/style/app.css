@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Минимальная высота на весь экран */
+  }
+  
+  .content-wrapper {
+    flex: 1; /* Контент растягивается, заполняя оставшееся пространство */
+  }
+  
+  footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Обычное относительное позиционирование */
+    width: 100%; /* Подвал растягивается на всю ширину */
+  }
+  

@@ -1,0 +1,187 @@
+.delivery-container {
+    position: relative; /* Relative positioning to allow absolute children */
+    width: 100%;
+    height: auto;
+    background-color: #1a1a1a;
+  }
+  
+  .text-section {
+    position: absolute; /* Absolute positioning to overlay on the map */
+    top: 50px; /* Adjust based on desired distance from the top */
+    left: 50px; /* Adjust based on desired distance from the left */
+    color: white;
+    z-index: 1; /* Ensure the text is above the image */
+    max-width: 50%; /* Control width of text section to avoid overflowing */
+  }
+  
+  .text-section h2 {
+    font-size: 3rem; /* Increased size for the heading */
+    font-family: 'Gilroy-ExtraBold', sans-serif; /* Apply Gilroy font */
+    margin-bottom: 100px;
+  }
+  
+  .text-section h3 {
+    font-size: 1.5rem;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .text-section p {
+    font-size: 1rem;
+    font-family: 'MyriadPro-Regular', sans-serif; /* Apply MyriadPro for secondary text */
+    margin-bottom: 10px;
+    width: 70%;
+  }
+  
+  .working-hours {
+    font-weight: bold;
+    font-size: 1.5em; /* Настройте размер шрифта по вашему усмотрению */
+  }
+  
+  .map-section {
+    position: relative;
+    width: 100%; /* Take full width */
+    height: 600px; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+    align-items: center; /* Center image vertically */
+  }
+  
+  .map-section img {
+    width: 60%; /* Adjust the size of the image as needed */
+    max-width: 100%; /* Ensure image does not overflow */
+  }
+  
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Расстояние между блоками */
+  background-color: #1a1a1a;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.block {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end; /* Выровнять содержимое по правому краю */
+}
+
+.con {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: flex-end; /* Выровнять содержимое по правому краю внутри блока */
+}
+
+.left-half {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px; /* Пространство между блоками */
+}
+
+.top-block, .bottom-block {
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.top-block h2 {
+  font-size: 2.7rem; /* Увеличенный размер заголовка */
+  font-family: 'Gilroy-ExtraBold', sans-serif; /* Применить Gilroy-ExtraBold для заголовка */
+  margin-bottom: 10px;
+}
+
+.top-block p {
+  font-size: 1.2rem; /* Увеличенный размер текста параграфа */
+  font-family: 'MyriadPro-Regular', sans-serif; /* Применить MyriadPro-Regular для параграфа */
+  margin-bottom: 10px;
+}
+
+.bottom-block img {
+  margin-top: 3px; /* Расстояние между картинкой и текстом */
+}
+
+.right-half {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 50%;
+  gap: 10px; /* Пространство между блоками */
+}
+
+.right-half img {
+  width: 60px;
+  margin-right: 6px; /* Расстояние между картинкой и текстом */
+}
+
+.window-block {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Выровнять текст внутри блока по левому краю */
+  border-radius: 8px;
+  padding: 10px;
+  font-family: 'Gilroy-ExtraBold', sans-serif; /* Применить Gilroy-ExtraBold для текста */
+}
+
+.phone-number {
+  display: block; /* Перенос номера телефона на новую строку */
+  font-family: 'MyriadPro-Regular', sans-serif; /* Применить MyriadPro-Regular для номера телефона */
+}
+
+.disclaimer-container {
+  background-color: #1a1a1a; /* Тёмный фон для блока */
+  color: white; /* Цвет текста */
+  padding-top: 50px;
+  max-width: 100%; /* Максимальная ширина блока */
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+
+.disclaimer-header h2 {
+  font-size: 2rem; /* Размер заголовка */
+  font-family: 'Gilroy-ExtraBold', sans-serif; /* Шрифт для заголовка */
+  margin-bottom: 15px; /* Расстояние между заголовком и текстом */
+}
+
+.disclaimer-body p {
+  font-size: 1rem; /* Размер основного текста */
+  font-family: 'MyriadPro-Regular', sans-serif; /* Шрифт для основного текста */
+  margin-bottom: 30px; /* Расстояние между абзацами */
+  width: 80%;
+}
+
+.disclaimer-body p strong {
+  font-size: 1.1rem; /* Размер шрифта для выделенного текста */
+  font-family: 'Gilroy-ExtraBold', sans-serif; /* Шрифт для выделенного текста */
+}
+
+.pod {
+  margin-top: 5px; /* Adjust this to control spacing between "По телефону" and the phone number */ /* You can adjust the font size if necessary */
+  font-family: 'MyriadPro-Regular', sans-serif; /* Use a different font if required */
+  color: #fff; /* Ensure the text color matches your design */
+  background: linear-gradient(90deg, #ABF538, #FED919);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.disclaimer-body p {
+  margin: 0; /* Remove the default margin */
+  margin-bottom: 20px; /* Adjust this value to set the desired spacing */
+}
+
+.disclaimer-body ul {
+  padding-left: 25px; /* Adjust this value to set the desired indentation */
+}
+
+.pod::selection {
+  background: #c5ff56;
+  -webkit-text-fill-color: black;
+}
+.pravo {
+  margin-left: 10px;
+}
